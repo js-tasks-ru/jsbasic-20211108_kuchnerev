@@ -11,7 +11,8 @@ function print(text) {
  */
 function isValid(name) {
 
-    return (name.includes(" ") || name.length < 4 || name === null)? false: true;
+    //return (name.includes(" ") || name.length < 4 || name === null)? false: true;
+    return !!name && !name.includes(' ') && name.length >= 4;
 }
 
 function sayHello() {
