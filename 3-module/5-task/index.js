@@ -1,5 +1,5 @@
 function getMinMax(str) {
-   
+
         let ourArray = str.split(' ').filter(item => !isNaN(item));
         let sortArray = ourArray.sort((a, b) => a-b);
         let maxArray = Math.max.apply(null,sortArray);
