@@ -1,3 +1,3 @@
 function highlight(table) {
-  // ваш код...
+ table.childNodes[3].style.backgroundColor = 'red';
 }
