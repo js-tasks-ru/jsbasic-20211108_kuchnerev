@@ -8,7 +8,7 @@ function initCarousel() {
   buttonLeft.style.display = 'none'
 document.querySelector('.carousel').addEventListener('click', function(ev){
   
-    ev.target = document.querySelector('carousel__arrow');
+    
     if(ev.target === buttonRight && pos < 4){
       pos += +1;
       shift = shift+ widthOneSlide;

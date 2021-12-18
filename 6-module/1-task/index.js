@@ -5,11 +5,11 @@
  * Пример одного элемента, описывающего строку таблицы
  *
  *      {
- *          name: 'Ilia',
- *          age: 25,
- *          salary: '1000',
- *          city: 'Petrozavodsk'
- *      }
+     *          name: 'Ilia',
+     *          age: 25,
+     *          salary: '1000',
+     *          city: 'Petrozavodsk'
+     *      },
  *
  */
  export default class UserTable {
@@ -47,17 +47,18 @@
       <tbody>
     `; // оборачиваем полученные строчки в tbody
 
-   this.elem.addEventListener('click', (event) => this.onClick(event));
-  
-
- /* onClick(event) {
+    this.elem.addEventListener('click', (event) => this.onClick(event));
+  }
+asd = 5;
+  onClick(event) {
     if (event.target.tagName != 'BUTTON') {
       return;
     }
 
     let tr = event.target.closest('tr');
 
-    tr.remove();*/
+    tr.remove();
   }
+
 
 }
