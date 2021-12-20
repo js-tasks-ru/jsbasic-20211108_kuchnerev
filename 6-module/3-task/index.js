@@ -9,20 +9,18 @@ export default class Carousel {
     this.ourHtml = `
     <div class="container">
 
-  <!--Корневой элемент карусели-->
   <div class="carousel">
-  <!--Кнопки переключения-->
-  <div class="carousel__arrow carousel__arrow_right">
+   <div class="carousel__arrow carousel__arrow_right">
     <img src="/assets/images/icons/angle-icon.svg" alt="icon">
   </div>
+
   <div class="carousel__arrow carousel__arrow_left">
     <img src="/assets/images/icons/angle-left-icon.svg" alt="icon">
   </div>
 
   <div class="carousel__inner">`+ this.slides.map(slide => 
-    `<!--Верстка 1-ого слайда-->
-   
-  <div class="carousel__slide" data-id="${slide.id}">
+    `
+    <div class="carousel__slide" data-id="${slide.id}">
     <img src="/assets/images/carousel/${slide.image}" class="carousel__img" alt="slide">
     <div class="carousel__caption">
       <span class="carousel__price">€${slide.price.toFixed(2)}</span>
@@ -97,9 +95,7 @@ export default class Carousel {
      
     const event = new CustomEvent("product-add", {
       bubbles: true,
-      detail:{
-        id:slideId
-      }
+      detail:slideId
     });
     this.elem.dispatchEvent(event);
     }

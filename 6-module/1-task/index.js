@@ -49,7 +49,7 @@
 
     this.elem.addEventListener('click', (event) => this.onClick(event));
   }
-asd = 5;
+
   onClick(event) {
     if (event.target.tagName != 'BUTTON') {
       return;
