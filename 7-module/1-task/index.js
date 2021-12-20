@@ -97,7 +97,6 @@ export default class RibbonMenu {
 
           const categoryId = this.dataset.id;
           
-          console.log(categoryId);
           const event = new CustomEvent('ribbon-select', {
             bubbles: true,
             detail:categoryId
