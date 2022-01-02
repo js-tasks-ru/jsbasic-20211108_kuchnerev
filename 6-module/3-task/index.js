@@ -99,4 +99,5 @@ export default class Carousel {
     });
     this.elem.dispatchEvent(event);
     }
+   
   }
